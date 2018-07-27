@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * @author tommib
  */
 @Repository
-public class UserDaoImpl extends AbstractPersistable<Long> implements UserDAO {
+public class UserDaoImpl implements UserDAO {
 
     @Override
     public void getAllUsers() {

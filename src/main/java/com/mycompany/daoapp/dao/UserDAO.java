@@ -5,6 +5,7 @@
  */
 package com.mycompany.daoapp.dao;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * @author tommib
  */
 @Repository
-public interface UserDAO {
+public interface UserDAO extends JpaRepository<User, Long>{
 
     public void getAllUsers();
 
